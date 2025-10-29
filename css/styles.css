@@ -1,0 +1,253 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 2rem;
+    transition: .3s
+}
+
+img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.card img[src="assets/github.svg"] {
+    filter: invert(0);
+}
+
+img[src="assets/linkedin.svg"] {
+    filter: grayscale(1) contrast(999);
+    border: 1px solid white;
+}
+
+img[src="assets/github.svg"],
+img[src="assets/c++.svg"],
+img[src="assets/menu.svg"],
+img[src="assets/flask.svg"] {
+    filter: invert(1);
+}
+
+body {
+    background-color: #0e1010;
+    color: white;
+    font-family: "avenir_next_lt";
+}
+
+header {
+    background-color: #0e1010;
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 0.8125em 1.625em;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #272d2b;
+    z-index: 1;
+}
+
+.name {
+    margin: 0;
+    font-family: "mazius_italic";
+    font-weight: normal;
+    font-size: 1.875rem;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: none;
+}
+
+main {
+    padding: 2.5em 1.5em 4.375em;
+}
+
+.card {
+    background: white;
+    color: black;
+    border-radius: 20px;
+    padding: 1.375em 0.75em;
+}
+
+.card-top h3 {
+    margin: 0;
+    font-family: "mazius_italic";
+    font-weight: normal;
+    font-size: 1.75rem;
+    margin-bottom: 0.42em;
+}
+
+.card-description {
+    margin: 0;
+    line-height: 130%;
+    margin-bottom: 1.375em;
+}
+
+.icons {
+    display: flex;
+    gap: 1em;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.resume-button {
+    padding: 0;
+    border: 0;
+    font-family: "Neutral Face Bold";
+    background-color: white;
+    font-size: 0.6875rem;
+    padding: 0.818em 3.045em;
+    border: 1px solid #4f5b58;
+    border-radius: 74px;
+}
+
+.resume-button:hover {
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
+}
+
+main section {
+    margin: 5.3125em 0em;
+    text-align: center;
+}
+
+.about {
+}
+
+.section-header {
+    margin: 0;
+    font-family: "mazius_italic";
+    font-weight: normal;
+}
+
+.description {
+    margin: 1.5em 0em;
+}
+
+.technologies {
+}
+
+.tech-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 2em;
+}
+
+.tech-icons img {
+    width: 50%;
+}
+
+.project {
+    text-align: left;
+    margin-bottom: 2.625em;
+}
+
+.project-image {
+    height: 7.125em;
+    border: 1px solid white;
+    background-color: rgb(70, 69, 69);
+}
+
+.project-org {
+    margin: 0;
+    font-family: 'Neutral Face Regular';
+    color: #859591;
+    font-weight: normal;
+    font-size: 1rem;
+    margin: .5em 0em;
+}
+
+.project-header {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: 'mazius_regular';
+    font-weight: normal;
+}
+
+.project-desc {
+    margin: 0;
+    margin: .5em 0em;
+}
+
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-footer a {
+    text-decoration: none;
+    color: white;
+    font-size: .875rem;
+    padding: .679em 1.107em;
+    background-color: #2F3634;
+    border-radius: 74px;
+    font-family: 'Neutral Face Bold';
+}
+
+.project-footer a:hover {
+    background-color: #4a5552;
+    cursor: pointer;
+}
+
+.contact {
+    margin-bottom: 4.375em;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-icons img {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 2em 1.581em;
+    border-top: 1px solid #272D2B;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-buttons a {
+    font-size: .875em;
+    text-decoration: none;
+    color: white;
+    font-family: 'Neutral Face Regular';
+}
+
+footer p {
+    margin: 0;
+}
+
+.copyright {
+    margin-top: 1.65em;
+}
+
+.credit  a{
+    color: rgb(173, 91, 249)
+}
+
