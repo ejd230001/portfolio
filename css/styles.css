@@ -12,12 +12,6 @@ body {
 
 img {
     width: 2rem;
-    transition: .3s
-}
-
-img:hover {
-    transform: scale(1.2);
-    cursor: pointer;
 }
 
 .card img[src="assets/github.svg"] {
@@ -29,10 +23,15 @@ img[src="assets/linkedin.svg"] {
     border: 1px solid white;
 }
 
+img[src="assets/java.svg"] {
+    filter: brightness(1.5);
+}
+
 img[src="assets/github.svg"],
 img[src="assets/c++.svg"],
 img[src="assets/menu.svg"],
-img[src="assets/flask.svg"] {
+img[src="assets/flask.svg"],
+img[src="assets/arrow.svg"] {
     filter: invert(1);
 }
 
@@ -64,10 +63,12 @@ header {
 .menu {
     margin: 0;
     padding: 0;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-nav {
-    display: none;
+.menu:hover {
+    transform: scale(1.3);
 }
 
 main {
@@ -79,6 +80,8 @@ main {
     color: black;
     border-radius: 20px;
     padding: 1.375em 0.75em;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .card-top h3 {
@@ -93,6 +96,7 @@ main {
     margin: 0;
     line-height: 130%;
     margin-bottom: 1.375em;
+    max-width: 600px;
 }
 
 .icons {
@@ -106,11 +110,21 @@ main {
     align-items: flex-end;
 }
 
+.card-bottom img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-bottom img:hover {
+    transform: scale(1.3);
+}
+
 .resume-button {
     padding: 0;
     border: 0;
     font-family: "Neutral Face Bold";
-    background-color: white;
+    color: white;
+    background-color: black;
     font-size: 0.6875rem;
     padding: 0.818em 3.045em;
     border: 1px solid #4f5b58;
@@ -118,7 +132,7 @@ main {
 }
 
 .resume-button:hover {
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(75, 75, 75);
     cursor: pointer;
 }
 
@@ -128,6 +142,8 @@ main section {
 }
 
 .about {
+    max-width: 650px;
+    margin-inline: auto;
 }
 
 .section-header {
@@ -138,6 +154,8 @@ main section {
 
 .description {
     margin: 1.5em 0em;
+    max-width: 540px;
+    margin-inline: auto;
 }
 
 .technologies {
@@ -148,10 +166,22 @@ main section {
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
     gap: 2em;
+    max-width: 600px;
+    place-self: center;
 }
 
 .tech-icons img {
+    transition: 0.3s;
     width: 50%;
+}
+
+.tech-icons img:hover {
+    transform: scale(1.3);
+}
+
+.projects {
+    max-width: 900px;
+    margin-inline: auto;
 }
 
 .project {
@@ -159,7 +189,13 @@ main section {
     margin-bottom: 2.625em;
 }
 
+.project-content {
+    max-width: 400px;
+    margin-inline: auto;
+}
+
 .project-image {
+    width: 100%;
     height: 7.125em;
     border: 1px solid white;
     background-color: rgb(70, 69, 69);
@@ -167,23 +203,23 @@ main section {
 
 .project-org {
     margin: 0;
-    font-family: 'Neutral Face Regular';
+    font-family: "Neutral Face Regular";
     color: #859591;
     font-weight: normal;
     font-size: 1rem;
-    margin: .5em 0em;
+    margin: 0.5em 0em;
 }
 
 .project-header {
     margin: 0;
     font-size: 1.5rem;
-    font-family: 'mazius_regular';
+    font-family: "mazius_regular";
     font-weight: normal;
 }
 
 .project-desc {
     margin: 0;
-    margin: .5em 0em;
+    margin: 0.5em 0em;
 }
 
 .project-footer {
@@ -192,14 +228,23 @@ main section {
     align-items: center;
 }
 
+.project-footer img {
+    transition: 0.3s;
+}
+
+.project-footer img:hover {
+    transform: scale(1.15);
+}
+
 .project-footer a {
     text-decoration: none;
     color: white;
-    font-size: .875rem;
-    padding: .679em 1.107em;
-    background-color: #2F3634;
+    font-size: 0.875rem;
+    padding: 0.679em 1.107em;
+    background-color: #2f3634;
     border-radius: 74px;
-    font-family: 'Neutral Face Bold';
+    font-family: "Neutral Face Bold";
+    text-align: center;
 }
 
 .project-footer a:hover {
@@ -208,12 +253,23 @@ main section {
 }
 
 .contact {
-    margin-bottom: 4.375em;
+    margin-bottom: 0;
 }
 
 .contact-icons {
     display: flex;
     justify-content: space-evenly;
+    max-width: 300px;
+    margin-inline: auto;
+}
+
+.contact-icons img {
+    transition: 0.3s;
+}
+
+.contact-icons img:hover {
+    transform: scale(1.3);
+    cursor: pointer;
 }
 
 .contact-icons img {
@@ -223,8 +279,8 @@ main section {
 
 footer {
     text-align: center;
-    padding: 2em 1.581em;
-    border-top: 1px solid #272D2B;
+    padding: 1em 1.581em;
+    border-top: 1px solid #272d2b;
 }
 
 .footer-buttons {
@@ -233,21 +289,145 @@ footer {
 }
 
 .footer-buttons a {
-    font-size: .875em;
+    font-size: 0.875em;
     text-decoration: none;
     color: white;
-    font-family: 'Neutral Face Regular';
+    font-family: "Neutral Face Regular";
+    transition: 0.3s;
+}
+
+.footer-buttons a:hover {
+    transform: scale(1.2);
 }
 
 footer p {
     margin: 0;
+    margin-bottom: 0.5em;
 }
 
-.copyright {
-    margin-top: 1.65em;
+.credit a {
+    color: rgb(173, 91, 249);
 }
 
-.credit  a{
-    color: rgb(173, 91, 249)
+nav {
+    position: fixed;
+    background-color: #1d1d1e;
+    height: 100%;
+    inset: 0;
+    max-width: 250px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    transform: translateX(-100%);
+    transition: 0.3s;
 }
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: "Neutral Face Regular";
+    width: 100%;
+    padding: 0.875em 0em 0.875em 2.6875em;
+}
+
+nav ul li a:hover {
+    background-color: #38383a;
+}
+
+nav img {
+    box-sizing: content-box;
+    transform: scale(-1);
+    padding: 2.5625em 2.75em 1.875em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav img:hover {
+    transform: scale(-1) translateX(-15px);
+}
+
+@media only screen and (min-width: 744px) {
+    .card {
+        padding: 5.9375em;
+    }
+
+    .about {
+        display: flex;
+        text-align: left;
+        gap: 2.8125em;
+    }
+
+    .about .section-header {
+        text-wrap: nowrap;
+    }
+
+    .about p {
+        margin: 0;
+    }
+
+    .project {
+        display: flex;
+        gap: 1.5em;
+    }
+
+    .project-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-footer {
+        margin-top: auto;
+    }
+
+    .project-image {
+        height: 16.8125em;
+    }
+
+    .even {
+        order: 2;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav {
+        position: unset;
+        transform: translateX(0) !important;
+        background-color: #0e1010;
+        max-width: unset;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        gap: 2.6875em;
+    }
+
+    nav ul li a {
+        width: unset;
+        padding: 0;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        background-color: unset;
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+
+@media only screen and (min-width: 1065px) {
+    main section {
+        margin: 10.3125em 0em;
+    }
+}
