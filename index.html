@@ -15,9 +15,9 @@
             <nav>
                 <img class="back" src="assets/arrow.svg" alt="back arrow" />
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Get in Touch</a></li>
+                    <li><a class="about-nav">About</a></li>
+                    <li><a class="project-nav">Projects</a></li>
+                    <li><a class="contact-nav">Get in Touch</a></li>
                 </ul>
             </nav>
         </header>
@@ -26,36 +26,73 @@
                 <div class="card-top">
                     <h3>hello!</h3>
                     <p class="card-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dicta id earum dolores quisquam ipsum consequatur
-                        eligendi repellat culpa obcaecati esse qui quia velit a
-                        et, sit illo nostrum veritatis neque.
+                        I'm Elden, and I am currently pursing my Bachelor's in
+                        Computer Science at UTD. Welcome to my portfolio
+                        website!
                     </p>
                 </div>
                 <div class="card-bottom">
                     <div class="icons">
-                        <a href="#"
+                        <a
+                            href="https://www.linkedin.com/in/elden-deguia-84a68b325/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             ><img
                                 src="assets/linkedin.svg"
                                 alt="linkedin button" /></a
-                        ><a href="#"
+                        ><a
+                            href="https://github.com/ejd230001"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             ><img src="assets/github.svg" alt="github icons"
                         /></a>
                     </div>
                     <div class="card-buttons">
-                        <button class="resume-button">Download Resume</button>
+                        <a href="assets/Resume.pdf" download
+                            ><button class="resume-button">
+                                Download Resume
+                            </button></a
+                        >
                     </div>
                 </div>
             </div>
             <section class="about">
                 <h1 class="section-header">about me</h1>
-                <p class="about-par description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium assumenda eaque, exercitationem, quibusdam ex
-                    ullam inventore adipisci rem nostrum impedit blanditiis
-                    natus quae nihil ratione magnam labore? Recusandae, quae
-                    magni?
-                </p>
+                <div>
+                    <p class="about-par description">
+                        Hey! My name is Elden and I'm currently in my third year
+                        at UTD (senior by credits). I've been interested in tech
+                        related stuff since I was little, and I began to learn
+                        about Computer Science during my Sophomore year of high
+                        school.
+                    </p>
+
+                    <p class="about-par description">
+                        Academically, I've always been a high achiever and I
+                        love learning about new things from my classes. So far,
+                        my favorite classes have been Advanced Algorithms,
+                        Operating Systems, and Discrete Math.
+                    </p>
+
+                    <p class="about-par description">
+                        In terms of experience, I've made tons of projects
+                        through clubs, classes, and on my own. My favorite
+                        project so far has been Medvisor, a project I made while
+                        a part of the Artificial Intelligence Society at UTD.
+                    </p>
+
+                    <p class="about-par description">
+                        Other than that, I've made tons of projects through The
+                        Odin Project, along with a bunch of projects that
+                        incorporate cool algorithms from classes in my school.
+                        My favorites are listed below :)
+                    </p>
+
+                    <p class="about-par description">
+                        I'm currently seeking professional, industry experience.
+                        I hope you enjoy my website!
+                    </p>
+                </div>
             </section>
             <section class="technologies">
                 <h1 class="section-header">skills</h1>
@@ -87,21 +124,70 @@
             <section class="projects">
                 <h1 class="section-header">projects</h1>
                 <p class="description">
-                    some projects I've done in school/clubs
+                    some projects I've done in school, clubs, and on my own
                 </p>
                 <div class="project">
-                    <div class="project-image"></div>
+                    <div class="project-image medvisor"></div>
                     <div class="project-content">
-                        <h2 class="project-org">
-                            Web Development Personal Project
-                        </h2>
+                        <h2 class="project-org">Artificial Intelligence</h2>
+                        <h1 class="project-header">Medvisor</h1>
+                        <p class="project-desc">
+                            Medvisor is a full stack application which takes in
+                            spine MRI's and outputs abnormalities within each
+                            intervertebral disc. We trained two AI models, one
+                            which segmented the spine into different discs and
+                            one which classified the abnormalities. The models
+                            were integrated into a backend API utilizing Flask
+                            and combined with a frontend created with React.
+                        </p>
+                        <div class="project-footer">
+                            <div class="project-icons">
+                                <img
+                                    src="assets/javascript.svg"
+                                    alt="javascript icon"
+                                />
+                                <img src="assets/react.svg" alt="react icon" />
+                                <img
+                                    src="assets/python.svg"
+                                    alt="python icon"
+                                />
+                                <img
+                                    src="assets/tensorflow.svg"
+                                    alt="tensorflow icon"
+                                />
+                                <img
+                                    src="assets/opencv.svg"
+                                    alt="opencv icon"
+                                />
+                                <img
+                                    src="assets/pytorch.svg"
+                                    alt="pytorch icon"
+                                />
+                                <img src="assets/flask.svg" alt="flask icon" />
+                            </div>
+                            <a
+                                href="https://github.com/ejd230001/AIM-MedVisor"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >View Code</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image even portfolio"></div>
+                    <div class="project-content">
+                        <h2 class="project-org">Web Development</h2>
                         <h1 class="project-header">Portfolio Website</h1>
                         <p class="project-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Tempora magni veniam nisi sunt odio unde
-                            libero minima, distinctio, beatae sed omnis
-                            consequatur ratione vel facere, dolor quaerat
-                            molestiae cumque ut?
+                            My own website that showcases a lot of info about
+                            me. My goal was to showcase my front-end
+                            fundamentals that I learned from The Odin Project.
+                            The website was created from scratch with vanilla
+                            HTML, CSS, and JS. It's fully responsive and looks
+                            nice on all devices. Additionally, it makes full use
+                            of semantic HTML and ensures accessibility for all
+                            people.
                         </p>
                         <div class="project-footer">
                             <div class="project-icons">
@@ -112,79 +198,70 @@
                                     alt="javascript icon"
                                 />
                             </div>
-                            <a href="#">View Code</a>
+                            <a
+                                href="https://github.com/ejd230001/portfolio"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >View Code</a
+                            >
                         </div>
                     </div>
                 </div>
                 <div class="project">
-                    <div class="project-image even"></div>
-                    <div class="project-content">
-                        <h2 class="project-org">
-                            Artificial Intelligence Society
-                        </h2>
-                        <h1 class="project-header">Medvisor</h1>
-                        <p class="project-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Tempora magni veniam nisi sunt odio unde
-                            libero minima, distinctio, beatae sed omnis
-                            consequatur ratione vel facere, dolor quaerat
-                            molestiae cumque ut?
-                        </p>
-                        <div class="project-footer">
-                            <div class="project-icons">
-                                <img src="assets/javascript.svg" alt="javascript icon">
-                                <img src="assets/react.svg" alt="react icon">
-                                <img src="assets/python.svg" alt="python icon">
-                                <img src="assets/tensorflow.svg" alt="tensorflow icon">
-                                <img src="assets/opencv.svg" alt="opencv icon">
-                                <img src="assets/pytorch.svg" alt="pytorch icon">
-                                <img src="assets/flask.svg" alt="flask icon">
-                            </div>
-                            <a href="#">View Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-image"></div>
+                    <div class="project-image dining"></div>
                     <div class="project-content">
                         <h2 class="project-org">Operating System Concepts</h2>
                         <h1 class="project-header">
                             Dining Philosopher's Simulation
                         </h1>
                         <p class="project-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Tempora magni veniam nisi sunt odio unde
-                            libero minima, distinctio, beatae sed omnis
-                            consequatur ratione vel facere, dolor quaerat
-                            molestiae cumque ut?
+                            This multi-threaded application tackles the issue of
+                            concurrency within Operating Systems. Philosophers
+                            (modeled as threads) sit in a circle with forks
+                            between each one. In order to eat, a philosopher
+                            must acquire the two forks adjacent to them. Forks
+                            are incorporated as locks and make use of Petersen's
+                            algorithm to ensure concurrency within the program.
                         </p>
                         <div class="project-footer">
                             <div class="project-icons">
-                                <img src="assets/c++.svg" alt="c++ icon">
+                                <img src="assets/c++.svg" alt="c++ icon" />
                             </div>
-                            <a href="#">View Code</a>
+                            <a
+                                href="https://github.com/ejd230001/Dining-Philosophers"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >View Code</a
+                            >
                         </div>
                     </div>
                 </div>
                 <div class="project">
-                    <div class="project-image even"></div>
+                    <div class="project-image even flight"></div>
                     <div class="project-content">
                         <h2 class="project-org">
                             Data Structures and Algorithms
                         </h2>
                         <h1 class="project-header">Flight Planner</h1>
                         <p class="project-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Tempora magni veniam nisi sunt odio unde
-                            libero minima, distinctio, beatae sed omnis
-                            consequatur ratione vel facere, dolor quaerat
-                            molestiae cumque ut?
+                            This object-oriented program takes in an input of
+                            city-to-city connections and their associated costs,
+                            along with a source and destination city. A
+                            backtracking algorithm similar to Depth-First Search
+                            is used to perform an exhaustive search of all
+                            paths, and the top three shortest paths from source
+                            to destination are returned.
                         </p>
                         <div class="project-footer">
                             <div class="project-icons">
-                                <img src="assets/java.svg" alt="java icon">
+                                <img src="assets/java.svg" alt="java icon" />
                             </div>
-                            <a href="#">View Code</a>
+                            <a
+                                href="https://github.com/ejd230001/Flight-Planner"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >View Code</a
+                            >
                         </div>
                     </div>
                 </div>
@@ -192,19 +269,22 @@
             <section class="contact">
                 <h1 class="section-header">get in touch</h1>
                 <p class="contact-par description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quisquam accusantium fuga doloremque repudiandae! Iusto nam,
-                    dolorem esse laboriosam assumenda fuga facilis nobis! Sed
-                    dolorum illum laborum non deleniti expedita ratione.
+                    Feel free to contact me using any of the methods below!
                 </p>
                 <div class="contact-icons">
-                    <a href="#"
+                    <a
+                        href="https://github.com/ejd230001"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         ><img src="assets/github.svg" alt="github icon"
                     /></a>
-                    <a href="#"
+                    <a
+                        href="https://www.linkedin.com/in/elden-deguia-84a68b325/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         ><img src="assets/linkedin.svg" alt="linkedin icon"
                     /></a>
-                    <a href="#"
+                    <a href="mailto:eldendeguia@outlook.com"
                         ><img src="assets/email.svg" alt="email icon"
                     /></a>
                 </div>

@@ -197,7 +197,7 @@ main section {
 .project-image {
     width: 100%;
     height: 7.125em;
-    border: 1px solid white;
+    border: 3px solid darkgrey;
     background-color: rgb(70, 69, 69);
 }
 
@@ -352,6 +352,34 @@ nav img:hover {
     transform: scale(-1) translateX(-15px);
 }
 
+.medvisor {
+    background-image: url('../assets/imgs/medvisor.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio {
+    background-image: url('../assets/imgs/portfolio.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.dining {
+  background-image: url('../assets/imgs/dining.png');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-color: #14022e;
+}
+
+.flight {
+    background-image: url('../assets/imgs/flight.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: #20132b;
+}
+
 @media only screen and (min-width: 744px) {
     .card {
         padding: 5.9375em;
@@ -369,6 +397,7 @@ nav img:hover {
 
     .about p {
         margin: 0;
+        margin-bottom: 1.5em;
     }
 
     .project {
