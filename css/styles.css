@@ -247,6 +247,12 @@ main section {
     text-align: center;
 }
 
+.project-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
 .project-footer a:hover {
     background-color: #4a5552;
     cursor: pointer;
