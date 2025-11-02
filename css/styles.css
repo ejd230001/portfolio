@@ -142,8 +142,13 @@ main section {
 }
 
 .about {
-    max-width: 650px;
+    max-width: 800px;
     margin-inline: auto;
+}
+
+.about img {
+    max-width: 400px;
+    width: auto;
 }
 
 .section-header {
@@ -392,15 +397,21 @@ nav img:hover {
     }
 
     .about {
-        display: flex;
+        display: grid;
         text-align: left;
-        gap: 2.8125em;
+        gap: 1.5em;
+        grid-template-columns: 1fr 1fr;
     }
 
     .about .section-header {
         text-wrap: nowrap;
+        text-align: center;
     }
 
+    .about-header {
+        grid-column: 1 / span 2;
+    }
+    
     .about p {
         margin: 0;
         margin-bottom: 1.5em;
