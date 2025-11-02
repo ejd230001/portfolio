@@ -146,9 +146,14 @@ main section {
     margin-inline: auto;
 }
 
+h1.about-header {
+    margin-bottom: .25em;
+}
+
 .about img {
     width: 100%;
     margin-inline: auto;
+    border-radius: 13px;
 }
 
 .section-header {
@@ -396,7 +401,7 @@ nav img:hover {
     .about {
         display: grid;
         text-align: left;
-        gap: 1.5em;
+        gap: 1em;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -405,7 +410,8 @@ nav img:hover {
         text-align: center;
     }
 
-    .about-header {
+    h1.about-header {
+        margin: 0;
         grid-column: 1 / span 2;
     }
     
