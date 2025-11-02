@@ -147,8 +147,8 @@ main section {
 }
 
 .about img {
-    max-width: 400px;
-    width: auto;
+    width: 100%;
+    margin-inline: auto;
 }
 
 .section-header {
@@ -161,9 +161,6 @@ main section {
     margin: 1.5em 0em;
     max-width: 540px;
     margin-inline: auto;
-}
-
-.technologies {
 }
 
 .tech-icons {
