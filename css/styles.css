@@ -232,6 +232,14 @@ h1.about-header {
     margin: 0.5em 0em;
 }
 
+.project-desc > a {
+    color: white;
+}
+
+.project-desc > a:hover {
+    color: rgb(194, 194, 194);
+}
+
 .project-footer {
     display: flex;
     justify-content: space-between;
@@ -400,6 +408,12 @@ nav img:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #20132b;
+}
+
+.suite {
+    background-image: url("../assets/imgs/grid.png");
+    background-size: cover;
+    background-position: center;
 }
 
 @media only screen and (min-width: 744px) {
