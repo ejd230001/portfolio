@@ -23,15 +23,18 @@ img[src="assets/linkedin.svg"] {
     border: 1px solid white;
 }
 
-img[src="assets/java.svg"] {
+img[src="assets/java.svg"],
+img[src="assets/aws.svg"] {
     filter: brightness(1.5);
+    
 }
 
 img[src="assets/github.svg"],
 img[src="assets/c++.svg"],
 img[src="assets/menu.svg"],
 img[src="assets/flask.svg"],
-img[src="assets/arrow.svg"] {
+img[src="assets/arrow.svg"],
+img[src="assets/express.svg"] {
     filter: invert(1);
 }
 
@@ -147,7 +150,7 @@ main section {
 }
 
 h1.about-header {
-    margin-bottom: .25em;
+    margin-bottom: 0.25em;
 }
 
 .about img {
@@ -257,7 +260,7 @@ h1.about-header {
 .project-buttons {
     display: flex;
     flex-direction: column;
-    gap: .2em;
+    gap: 0.2em;
 }
 
 .project-footer a:hover {
@@ -366,29 +369,35 @@ nav img:hover {
 }
 
 .medvisor {
-    background-image: url('../assets/imgs/medvisor.png');
+    background-image: url("../assets/imgs/medvisor.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.lot {
+    background-image: url("../assets/imgs/lot.png");
     background-size: cover;
     background-position: center;
 }
 
 .portfolio {
-    background-image: url('../assets/imgs/portfolio.png');
+    background-image: url("../assets/imgs/portfolio.png");
     background-size: cover;
     background-position: center;
 }
 
 .dining {
-  background-image: url('../assets/imgs/dining.png');
-  background-size: contain;
-  background-repeat: no-repeat; 
-  background-position: center;
-  background-color: #14022e;
+    background-image: url("../assets/imgs/dining.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #14022e;
 }
 
 .flight {
-    background-image: url('../assets/imgs/flight.png');
+    background-image: url("../assets/imgs/flight.png");
     background-size: contain;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
     background-color: #20132b;
 }
@@ -414,7 +423,7 @@ nav img:hover {
         margin: 0;
         grid-column: 1 / span 2;
     }
-    
+
     .about p {
         margin: 0;
         margin-bottom: 1.5em;
