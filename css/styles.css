@@ -34,7 +34,8 @@ img[src="assets/c++.svg"],
 img[src="assets/menu.svg"],
 img[src="assets/flask.svg"],
 img[src="assets/arrow.svg"],
-img[src="assets/express.svg"] {
+img[src="assets/express.svg"],
+img[src="assets/openai.svg"] {
     filter: invert(1);
 }
 
@@ -374,6 +375,12 @@ nav img {
 
 nav img:hover {
     transform: scale(-1) translateX(-15px);
+}
+
+.disaster {
+    background-image: url("../assets/imgs/disaster.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .medvisor {
